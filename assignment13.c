@@ -40,7 +40,9 @@ int main(void){
 
 // solving for slope
 float solveSlope(struct line line1){
-	float slope = line1.point1.y-line1.point2.y/line1.point1.x-line1.point2.y;
+	float y =line1.point1.y-line1.point2.y;
+	float x = line1.point1.x-line1.point2.x;
+	float slope =y/x;
 	
 	return slope;
 }
